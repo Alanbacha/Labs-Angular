@@ -12,7 +12,14 @@ Second you need to install [Angular CLI](https://angular.io/guide/setup-local).
 npm install -g @angular/cli
 ```
 
-Third, if you want to clone this project using [Git](https://git-scm.com/downloads), you can open you terminal in the folder that you want to create a copy of this project and use this code bellow.
+Third, if you are using PowerShell, make sure that you have an ExecutionPolicy configured to RemoteSigned
+
+```
+> Set-ExecutionPolicy RemoteSigned
+> Get-ExecutionPolicy
+```
+
+Fourth, if you want to clone this project using [Git](https://git-scm.com/downloads), you can open you terminal in the folder that you want to create a copy of this project and use this code bellow.
 
 ```
 git clone https://github.com/Alanbacha/Labs-Angular.git
