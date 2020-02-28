@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <app-header></app-header>
+    <div>
+      <h1>Welcome to {{ title }}</h1>
+
+      <h2>{{ name }} {{ date | date: "yyyy-MMM-dd" }}</h2>
+
+      <button (click)="fireEvent()">Send Event</button>
+
+      <input [(ngModel)]="name" type="text" /> {{ name }}
+
+      <div
+        *ngFor="
+          let color of colors;
+          index as i;
+          first as f;
+          last as l;
+          odd as o;
+          even as e
+        "
+      >
+        <hr *ngIf="f" />
+        <div>
+          Index = {{ i }}<br />
+          First = {{ f }}<br />
+          Odd = {{ o }}<br />
+          Even = {{ e }}<br />
+          Last = {{ l }}<br />
+          Color = {{ color }}
+        </div>
+        <hr />
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>
