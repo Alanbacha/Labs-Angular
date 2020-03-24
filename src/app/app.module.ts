@@ -3,16 +3,16 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
-import { AppRoutingModule } from "./app-routing.module";
+import { AppRoutingModule, routingComponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HomeComponent } from "./home/home.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { UnderstandingAngularComponent } from "./understanding-angular/understanding-angular.component";
-import { EmployeeListComponent } from "./employee-list/employee-list.component";
 import { EmployeeDetailComponent } from "./employee-detail/employee-detail.component";
 import { EmployeeService } from "./employee.service";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,9 @@ import { EmployeeService } from "./employee.service";
     HomeComponent,
     SidebarComponent,
     UnderstandingAngularComponent,
-    EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    routingComponents,
+    PageNotFoundComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [EmployeeService],

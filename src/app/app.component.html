@@ -4,5 +4,14 @@
   [parentData]="name"
 ></app-understanding-angular> -->
 
-<app-employee-list></app-employee-list>
-<app-employee-detail></app-employee-detail>
+<!-- <app-employee-list></app-employee-list>
+<app-employee-detail></app-employee-detail> -->
+<div style="text-align: center">
+	<h1>Routing</h1>
+</div>
+<nav>
+	<a routerLink="/departments" routerLinkActive="active">Departments</a>
+	<a routerLink="/employees" routerLinkActive="active">Employees</a>
+</nav>
+
+<router-outlet></router-outlet>
